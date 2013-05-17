@@ -1,0 +1,26 @@
++ Average Clock Mod 1
++ Six separate DS1307s using three MAX7219's shown on red displays. 
++ Each clock is individually adjustable by Minutes and Hours. 
++ A fourth MAX7219 drives a seventh, larger green display that shows the 
++ average time of all six clocks.
++ 
++ Average time can be hidden; it implements a button 
++ which, when pressed, displays this value. User configuration for this
++ function is via a configuration switch. When the switch is LOW, average time displays
++ normally. When HIGH, average time is displayed only when the button attached
++ to digital pin 4 is depressed. An automatic adjustment for LED intensity 
++ based on ambient lighting is included.
++ 
++ This version eliminates all the Hour and Minute adjustment buttons except
++ for two, which control all of the clocks. Setup is performed in three steps:
++ 
++ 1. The Master Reset button is pressed, zeroing all six clocks.
++ 2. The Hour and Minute adjust buttons add hours and minutes to all clocks
++	simultaneously.
++ 3. The Randomize button will add or remove up to 5 minutes randomly from
++	each clock.
++ 
++ 
++ by Michael B. LeBlanc
++ NSCAD University
++ http://generaleccentric.net
